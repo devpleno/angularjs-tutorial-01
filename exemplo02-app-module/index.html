@@ -1,12 +1,14 @@
-<html ng-app>
+<html ng-app="minhaApp">
 	<head>
 		<title>
-			AngularJS - Exemplo 01
+			AngularJS - Exemplo 02
 		</title>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular.min.js"></script>
+		<script src="app.js"></script>
 	</head>
-	<body>
-		<h1>Primeiro exemplo</h1>
+	<body ng-controller="MeuController">
+		<h1>Segundo exemplo</h1>
+        {{valor}}
         <div>
             <div>
                 <label>Digite seu primeiro nome:</label>
