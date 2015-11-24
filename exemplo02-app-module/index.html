@@ -1,0 +1,26 @@
+<html ng-app>
+	<head>
+		<title>
+			AngularJS - Exemplo 01
+		</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular.min.js"></script>
+	</head>
+	<body>
+		<h1>Primeiro exemplo</h1>
+        <div>
+            <div>
+                <label>Digite seu primeiro nome:</label>
+                <input type="text" ng-model="primeiroNome" placeholder="Informe seu primeiro nome">
+            </div>
+            <div>
+                <label>Digite seu último nome:</label>
+                <input type="text" ng-model="ultimoNome" placeholder="Informe seu sobrenome">
+            </div>
+            <div ng-show="primeiroNome && ultimoNome">
+                <h1>Olá {{primeiroNome}} {{ultimoNome}}!</h1>
+                <p>{{primeiroNome.length + ultimoNome.length}} caracteres digitados</p>
+            </div>
+
+        </div>
+	</body>
+</html>
