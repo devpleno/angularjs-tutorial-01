@@ -1,0 +1,22 @@
+<html ng-app="minhaApp">
+	<head>
+		<title>
+			AngularJS - Exemplo 03
+		</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular.min.js"></script>
+		<script src="app.js"></script>
+	</head>
+	<body ng-controller="MeuController as mc">
+		<h1>Controller utilizando o $scope</h1>
+        Contagem: {{mc.contador}}<br>
+        <input type="button" ng-click="mc.contar()" value="Contar!" />
+        <input type="button" ng-click="mc.zerar()" value="Zerar!" />
+        
+        <div ng-controller="MeuController as mc2">
+	        <h1>Controller utilizando o $scope</h1>
+		        Contagem: {{mc2.contador}}<br>
+	        <input type="button" ng-click="mc2.contar()" value="Contar!" />
+	        <input type="button" ng-click="mc2.zerar()" value="Zerar!" />
+    	</div>
+	</body>
+</html>
